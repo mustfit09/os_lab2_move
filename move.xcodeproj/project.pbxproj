@@ -28,6 +28,9 @@
 		2ED666F814F61795005C0DCE /* move */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = move; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED666FC14F61795005C0DCE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2ED666FE14F61795005C0DCE /* move.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = move.1; sourceTree = "<group>"; };
+		2ED6670514F618CD005C0DCE /* arg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arg.h; sourceTree = "<group>"; };
+		2ED6670614F622B2005C0DCE /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		2ED6670714F62FEE005C0DCE /* move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = move.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,9 @@
 			children = (
 				2ED666FC14F61795005C0DCE /* main.c */,
 				2ED666FE14F61795005C0DCE /* move.1 */,
+				2ED6670514F618CD005C0DCE /* arg.h */,
+				2ED6670614F622B2005C0DCE /* file.h */,
+				2ED6670714F62FEE005C0DCE /* move.h */,
 			);
 			path = move;
 			sourceTree = "<group>";
