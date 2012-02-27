@@ -21,4 +21,8 @@ int checkPath(char* path);
 int ensureSrc(char* path);
 //确保目标文件
 int ensureTar(char* path,char* src);
+//获得文件名
+char* getName(const char* path);
+//获取文件路径
+char* getPath(const char* path);
 #endif

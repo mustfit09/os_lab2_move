@@ -11,8 +11,10 @@
 #include "file.h"
 #include "move.h"
 #include <errno.h>
+#include <string.h>
 int main (int argc, const char * argv[])
 {
+    /*
     char* src;
     char* tar;
     //char* test_argv[] = {"/Users/kisses/msm.txt","/Users/kisses/backup/"};
@@ -26,6 +28,17 @@ int main (int argc, const char * argv[])
     ensureTar(tar,src);
     
     doMove(src,tar);
+    */
+    
+    char* string = "aa/s1/s2/s3/s4/s5/s6/f1";
+    char name[256];
+    char path[256];
+    strcpy(name,getName(string));
+    strcpy(path,getPath(string));
+    printf("=============\n");
+    printf("string:%s\n",string);
+    printf("name:%s\n",name);
+    printf("path:%s\n",path);
     return 0;
 }
 

@@ -30,7 +30,7 @@ int deleteFile(char* path)
 }
 
 int doMove(char* src,char* tar)
-{
+{ 
     /*
     int srcFile;
     char* buffer;
@@ -38,7 +38,6 @@ int doMove(char* src,char* tar)
     writeFile(tar,srcFile);
     deleteFile(src);
     */
-    
     rename(src, tar);
     if(errno != 22)
     {

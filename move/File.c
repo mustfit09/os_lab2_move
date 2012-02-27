@@ -11,6 +11,23 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+char* getName(const char* path)
+{
+    char* name = strrchr(path,'/');
+    name = name + 1;
+    return name;
+}
+char* getPath(const char* path)
+{
+    char filePath[256];
+    char* name = getName(path);
+    int sizeOfName = strlen(name);
+    int sizeOfString = strlen(path);
+    int sizeOfPath = sizeOfString - sizeOfName;
+    strncpy(filePath,path,(sizeOfPath));
+    filePath[sizeOfPath] = '\0';
+    return filePath;
+}
 int doFile(char* path,char* src)
 {
     printf("请问您是否需要创建\n");
