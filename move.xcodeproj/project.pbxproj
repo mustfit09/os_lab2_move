@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBC04FD14F987AE00C197B7 /* move.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC04FC14F987AE00C197B7 /* move.c */; };
+		2EBC050214FA2D7300C197B7 /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC050114FA2D7300C197B7 /* File.c */; };
 		2ED666FD14F61795005C0DCE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ED666FC14F61795005C0DCE /* main.c */; };
 		2ED666FF14F61795005C0DCE /* move.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2ED666FE14F61795005C0DCE /* move.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EBC04FC14F987AE00C197B7 /* move.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = move.c; sourceTree = "<group>"; };
+		2EBC050114FA2D7300C197B7 /* File.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = File.c; sourceTree = "<group>"; };
 		2ED666F814F61795005C0DCE /* move */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = move; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED666FC14F61795005C0DCE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2ED666FE14F61795005C0DCE /* move.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = move.1; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 				2ED666FE14F61795005C0DCE /* move.1 */,
 				2ED6670514F618CD005C0DCE /* arg.h */,
 				2ED6670614F622B2005C0DCE /* file.h */,
+				2EBC050114FA2D7300C197B7 /* File.c */,
 				2ED6670714F62FEE005C0DCE /* move.h */,
+				2EBC04FC14F987AE00C197B7 /* move.c */,
 			);
 			path = move;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED666FD14F61795005C0DCE /* main.c in Sources */,
+				2EBC04FD14F987AE00C197B7 /* move.c in Sources */,
+				2EBC050214FA2D7300C197B7 /* File.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +153,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -166,7 +174,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -209,6 +217,7 @@
 				2ED6670414F61795005C0DCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

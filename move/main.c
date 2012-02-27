@@ -10,22 +10,20 @@
 #include "arg.h"
 #include "file.h"
 #include "move.h"
-
+#include <errno.h>
 int main (int argc, const char * argv[])
 {
     char* src;
     char* tar;
-    //char** cp_argv;
-    char* test_argv[] = {"move1.c","move.c"};
+    //char* test_argv[] = {"/Users/kisses/msm.txt","/Users/kisses/backup/"};
     char** cp_argv;
-    cp_argv = doArg(2,test_argv);
-    //cp_argv = doArg(argc,argv);
+    //cp_argv = doArg(2,test_argv);
+    cp_argv = doArg(argc,argv);
     src = cp_argv[1];
     tar = cp_argv[2];
     
-    checkFile(src);
-    checkFile(tar);
-    doFile(tar);
+    ensureSrc(src);
+    ensureTar(tar,src);
     
     doMove(src,tar);
     return 0;
